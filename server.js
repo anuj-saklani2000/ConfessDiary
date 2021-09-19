@@ -62,7 +62,7 @@ passport.deserializeUser(function(id, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "https://mighty-island-60214.herokuapp.com/auth/google/confessions",
+    callbackURL: " https://mighty-island-60214.herokuapp.com/auth/google/confessions",
     userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo"
   },
   function(accessToken, refreshToken, profile, cb) {
