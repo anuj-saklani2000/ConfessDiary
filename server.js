@@ -12,7 +12,7 @@ const session=require("express-session")
  const GoogleStrategy = require('passport-google-oauth20').Strategy;
  const FacebookStrategy = require('passport-facebook').Strategy;
 const port=process.env.PORT||3000
-mongoose.connect('mongodb://localhost:27017/cusersDB');
+mongoose.connect('mongodb+srv://anuj_saklani:anuj123@cluster0.mn7ci.mongodb.net/cusersDB');             
 mongoose.set('bufferCommands', false);
 const app=express();
 app.set('view engine', 'ejs');
