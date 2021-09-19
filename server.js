@@ -13,6 +13,7 @@ const session=require("express-session")
  const FacebookStrategy = require('passport-facebook').Strategy;
 const port=process.env.PORT||3000
 mongoose.connect('mongodb://localhost:27017/cusersDB');
+mongoose.set('bufferCommands', false);
 const app=express();
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}))
