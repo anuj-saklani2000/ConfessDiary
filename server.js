@@ -5,7 +5,13 @@ const ejs=require("ejs")
 const mongoose=require("mongoose")
 const request=require("request")
 const https=require("https")
+const http=require("http")
 const passport=require("passport")
+const hostname="0.0.0.0"
+connst server=http.createServer(req,res)=>{
+  res.setHeader("content-type","text/plain")
+  res.end("Zeet Node")
+}
 const passportLocalMongoose=require("passport-local-mongoose")
 const findOrCreate = require('mongoose-find-or-create')
 const session=require("express-session")
