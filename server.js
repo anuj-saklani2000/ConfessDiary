@@ -96,7 +96,7 @@ app.post("/register",function(req,res){
 
     }
     else{
-      passport.authenticate("/auth/local")(req,res,function(){
+      passport.authenticate("local")(req,res,function(){
         console.log(user)
         res.redirect("/confess")
       })
@@ -119,7 +119,7 @@ app.post("/login",function(req,res){
      }
   else{
 
-  passport.authenticate("/auth/local")(req,res,function(){
+  passport.authenticate("local")(req,res,function(){
 
     res.redirect("/confess")
   })
