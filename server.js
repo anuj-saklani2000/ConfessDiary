@@ -5,20 +5,14 @@ const ejs=require("ejs")
 const mongoose=require("mongoose")
 const request=require("request")
 const https=require("https")
-const http=require("http")
 const passport=require("passport")
-const hostname="0.0.0.0"
-connst server=http.createServer(req,res)=>{
-  res.setHeader("content-type","text/plain")
-  res.end("Zeet Node")
-}
 const passportLocalMongoose=require("passport-local-mongoose")
 const findOrCreate = require('mongoose-find-or-create')
 const session=require("express-session")
  const GoogleStrategy = require('passport-google-oauth20').Strategy;
  const FacebookStrategy = require('passport-facebook').Strategy;
 const port=process.env.PORT||3000
-mongoose.connect('mongodb+srv://anuj_saklani:anuj@2000@cluster0.mn7ci.mongodb.net/cusersDB');
+mongoose.connect('mongodb://localhost:27017/cusersDB');
 mongoose.set('bufferCommands', false);
 const app=express();
 app.set('view engine', 'ejs');
