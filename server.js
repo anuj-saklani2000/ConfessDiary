@@ -63,7 +63,8 @@ passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
     callbackURL: "https://mighty-island-60214.herokuapp.com/auth/google/confessions",
-    userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo"
+    userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo",
+    proxy: true 
   },
   function(accessToken, refreshToken, profile, cb) {
     console.log(profile)
