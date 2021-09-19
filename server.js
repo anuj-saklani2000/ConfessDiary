@@ -62,7 +62,7 @@ passport.deserializeUser(function(id, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: " https://mighty-island-60214.herokuapp.com/auth/google/confessions",
+    callbackURL: "https://mighty-island-60214.herokuapp.com/auth/google/confessions",
     userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo"
   },
   function(accessToken, refreshToken, profile, cb) {
@@ -134,7 +134,7 @@ app.get("/auth/google/confessions",
     // Successful authentication, redirect home.
     res.redirect('/confess');
   });
-app.get('/auth/facebook', passport.authenticate('facebook', { scope: ['profile'] }));
+app.get('/auth/facebook', passport.authenticate('facebook', { scope : ['email'] }));
 app.get('/auth/facebook/callback',
   passport.authenticate('facebook', { successRedirect: '/confess',
                                       failureRedirect: '/login' }));
