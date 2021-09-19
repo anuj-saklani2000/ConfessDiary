@@ -64,7 +64,7 @@ passport.use(new GoogleStrategy({
     clientSecret: process.env.CLIENT_SECRET,
     callbackURL: "https://mighty-island-60214.herokuapp.com/auth/google/confessions",
     userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo",
-    proxy: true 
+    proxy: true
   },
   function(accessToken, refreshToken, profile, cb) {
     console.log(profile)
@@ -96,7 +96,7 @@ app.post("/register",function(req,res){
 
     }
     else{
-      passport.authenticate("local")(req,res,function(){
+      passport.authenticate("/auth/local")(req,res,function(){
         console.log(user)
         res.redirect("/confess")
       })
@@ -118,7 +118,8 @@ app.post("/login",function(req,res){
       res.redirect("/try")
      }
   else{
-  passport.authenticate("local")(req,res,function(){
+
+  passport.authenticate("/auth/local")(req,res,function(){
 
     res.redirect("/confess")
   })
