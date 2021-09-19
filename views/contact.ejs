@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+ <head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<title>Contact us|Confess Diary</title>
+<link rel="icon" href="images/penicon.png">
+ </head>
+ <body>
+   <header>
+     <nav data-spy="affix" data-offset-top="197">
+       <div class="logo">
+           <h1 class="logo-name"><i class="fas fa-pen-nib"></i><span>C</span>onfess  <span> D</span>iary</h1>
+           </div>
+           <ul>
+             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+           </ul>
+     </nav>
+   </header>
+   <main>
+      <div class="navs">
+             <ul>
+               <li><a href="/">Home</a></li>
+               <li><a href="/about">About</a></li>
+               <li><a href="/contact">Contact</a></li>
+           </ul>
+           <div class="tog">
+               <ul>
+                 <li><a href="/">Home</a></li>
+                 <li><a href="/about">About</a></li>
+                 <li><a href="/contact">Contact</a></li>
+           </ul>
+           </div>
+           <div class="bars">
+           <button class="but"><i class="fas fa-bars"></i></button>
+         </div>
+           <div class="log-sec">
+             <h3>New user?</h3>
+             <button><a href="/register">Sign up</a></button>
+              <button><a href="/login">Login</a></button>
+           </div>
+           </div>
+
+
+ <div class="container">
+<div class="wrapper">
+ <div class="row-a">
+   <i class="fas fa-headphones"></i>
+   <h1>Talk with Us</h1>
+   <h3>Feel free to Contact us any time</h3>
+ </div>
+ <div class="row-b">
+   <form class="fm" action="/contact" method="post">
+   <div class="part-a">
+<input type="text" name="names" id="names"  placeholder="Username">
+<input type="email" name="email" id="email" placeholder="Email">
+<input type="number" name="number" id="number" placeholder="Cell Phone">
+   </div>
+   <div class="part-b">
+     <textarea placeholder="Type Your Message" name="txt"></textarea>
+     <button type="submit">Contact Us</button>
+   </div>
+ </form>
+ </div>
+ <div class="row-c">
+   <h1>Connect Through Social Media</h1>
+ </div>
+</div>
+   </div>
+
+
+</main>
+<footer>
+ <div class="foot-section">
+    <ul>
+             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+           </ul>
+           <div class="c-r">
+             <h5>&copy; Copyrights @<span>C</span>onfess <span>D</span>iary. All rights reserved</h5>
+             <h6> Developed by:- Anuj Saklani</h6>
+           </div>
+ </div>
+</footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="text/javascript">
+   let show=true;
+    $(".but").click(function(){
+if(show){
+ $(".tog").slideDown()
+ show=false;
+}
+else{
+ $(".tog").slideUp()
+ show=true;
+}
+    })
+  </script>
+ </body>
+</html>

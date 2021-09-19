@@ -1,0 +1,670 @@
+:root{
+  --col1: rgb(56,56,56);
+  --col2:rgb(147,112,219);
+  --col3:   rgb(240,240,240);
+  --col4: rgb(255,255,102);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background: var(--col3);
+}
+header{
+  width: 100%;
+}
+header nav{
+  width: 100%;
+  display: flex;
+  background: var(--col1);
+  color: white;
+  padding: 0.1rem 2rem;
+
+}
+header nav .logo{
+display: flex;
+align-items: center;
+}
+header nav .logo h1{
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+header nav .logo h1 span{
+  color: var(--col2);
+}
+header nav .logo h1 i{
+  height: 4rem;
+  width: 4rem;
+    display: flex;
+  align-items: center;
+  position: relative;
+  right: -1rem;
+}
+header nav ul{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+header nav ul li{
+  list-style-type: none;
+  margin-right: 3.5rem;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+header nav ul li a:hover{
+  font-size: 1.8rem;
+}
+main{
+  width: 100%;
+
+}
+main .navs{
+  width: 100%;
+  display: flex;
+   background: var(--col2);
+   position: sticky;
+   top: 0px;
+   z-index: 999999;
+   box-shadow: 1px 1px 4px rgba(0,0,0,0.45);
+}
+main .navs .tog{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  background:var(--col3);
+  top: 2.9rem;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.65);
+  border-bottom-right-radius: 4px;
+   background: var(--col1);
+  border-bottom-left-radius: 4px;
+
+}
+main .navs .tog ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main .navs .tog ul li{
+display: flex;
+  justify-content: center;
+width: 100%;
+ margin-left: 4rem;
+ margin-top: 2rem;
+
+}
+main .navs .tog ul li a{
+  color: black;
+  font-size: 1.5rem;
+  font-family: 'Baloo 2', cursive;
+  padding: 0.5rem 0rem;
+  width: 80%;
+  text-align: center;
+ border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  background: var(--col2);
+  color: white;
+}
+main .navs .tog ul li a:hover{
+  border: solid 2px var(--col2);
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  background: transparent;
+  color: white;
+}
+main .navs .bars .but{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.8rem;
+  top: 0.5rem;
+  left: 1.5rem;
+  position: absolute;
+  display: none;
+}
+main .navs ul{
+display: flex;
+  align-items: center;
+  width: 65%;
+    padding: 0.3rem 0rem;
+    justify-content: center;
+}
+main .navs ul li{
+  list-style-type: none;
+  margin-right: 4rem;
+}
+main .navs ul li a{
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  font-family: 'Baloo 2', cursive;
+    padding: 0.1rem 1rem;
+}
+main .navs ul li a:hover{
+border: solid 2px white;
+  border-radius: 8px;
+}
+main .navs .log-sec{
+  display: flex;
+  align-items: center;
+  background: white;
+    padding: 0.3rem 2.5rem;
+  width: 35%;
+  position: relative;
+}
+main .navs .log-sec::before{
+  content: "";
+  position: absolute;
+  background: white;
+  height: 100%;
+  width: 3rem;
+  left: -2rem;
+  transform: skewX(-22deg);
+}
+main .navs .log-sec h3{
+  font-family: 'Baloo 2', cursive;
+}
+main .navs .log-sec button{
+  margin-left: 1.2rem;
+  padding: 0.2rem 2rem;
+   border: none;
+   outline: none;
+   border-radius: 6px;
+background: white;
+  border: solid 2px var(--col2);
+}
+main .navs .log-sec button a{
+  text-decoration: none;
+  font-size: 1rem;
+font-family: 'Baloo 2', cursive;
+   color: black;
+}
+main .navs .log-sec button:hover a{
+  color: white;
+}
+
+main .navs .log-sec button:hover{
+background: var(--col2);
+}
+
+
+
+main .comp{
+	width: 100%;
+border-bottom: solid 1px white
+
+}
+main .comp form{
+	width: 100%;
+	padding: 2rem 0rem;
+	display: flex;
+	flex-direction: column;
+	background: rgba(0,0,0,0.8);
+	color: white;
+}
+main .comp form h1{
+	width: 80%;
+margin: 1rem auto 1.5rem auto;
+font-family: 'Glory', sans-serif;
+font-size: 3rem;
+
+}
+main .comp form h6{
+	width: 80%;
+margin: 0.7rem auto 0.25rem auto;
+font-family: 'Glory', sans-serif;
+font-size: 1.2rem;
+}
+main .comp form input{
+	width: 80%;
+margin: 1rem auto 0.25rem auto;
+padding: 0.7rem 1rem;
+border-radius: 5px;
+font-family: 'Glory', sans-serif;
+font-size: 1rem;
+color: white;
+  background: rgba(80,80,80,0.6);
+border: none;
+	outline: none;
+}
+
+main .comp form input:hover{
+
+	border: solid 1px skyblue;
+	box-shadow: 1px 1px 9px rgba(0, 150, 255,0.55);
+}
+main .comp form textarea{
+	width: 80%;
+	height: 18rem;
+	margin: 1rem auto;
+	resize: none;
+	border-radius: 5px;
+	padding: 0.7rem 1rem;
+	font-family: 'Glory', sans-serif;
+font-size: 1rem;
+color: white;
+  background: rgba(80,80,80,0.6);
+border: none;
+	outline: none;
+}
+main .comp form textarea:hover{
+border: solid 1px skyblue;
+	box-shadow: 1px 1px 9px rgba(0, 150, 255,0.55);
+}
+
+main .comp form button{
+	width: 80%;
+	margin: 0.65rem auto 2rem auto;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	color: white;
+	font-size: 1.25rem;
+	background: rgba(0, 150, 255,0.9);
+	padding: 0.75rem 0rem;
+}
+main .comp form button:hover{
+	background: rgb(0, 71, 171);
+}
+
+
+
+
+
+
+footer{
+  width: 100%;
+
+}
+footer .foot-section{
+  background: var(--col1);
+  color: white;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+footer .foot-section ul{
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+footer .foot-section ul li{
+  list-style-type: none;
+  margin-right: 3.5rem;
+}
+footer .foot-section ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+footer .foot-section ul li a:hover{
+ color: var(--col4);
+}
+footer .foot-section .c-r{
+  margin-top: 1rem;
+}
+footer .foot-section .c-r h5{
+font-family: 'Poppins', sans-serif;
+font-weight: 100;
+font-size: 1.25rem;
+}
+footer .foot-section .c-r h5 span{
+  color: var(--col2);
+}
+footer .foot-section .c-r h6{
+  margin-top: 1rem;
+  font-weight: 100;
+  font-family: 'Baloo 2', cursive;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+
+
+/*media queries section*/
+
+@media screen and (max-width: 1230px){
+ main .navs ul{
+  width: 50%;
+}
+main .navs .log-sec{
+  width: 50%;
+}
+}
+
+
+@media screen and (max-width: 1100px){
+ main .card-section .flex{
+   flex-direction: column;
+}
+main .card-section .flex .grid-a{
+  width:100%;
+  justify-content: center;
+}
+main .card-section .flex .grid-b{
+   width:100%;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+main .card-section .flex .card{
+  width: 25rem;
+}
+}
+
+@media screen and (max-width: 920px){
+
+main .main-carousel .carousel-cell .compress h1{
+  font-size: 2.2rem;
+}
+main .main-carousel .carousel-cell .compress h4{
+ font-size: 1rem;
+}
+main .main-carousel .carousel-cell .compress p{
+  font-size: 1rem;
+}
+main .main-carousel .carousel-cell .compress button{
+    padding: 0.2rem 2rem;
+ font-size: 1rem;
+}
+main .main-carousel .carousel-cell .compress button a{
+  font-size: 1.2rem;
+}
+
+  }
+
+
+@media screen and (max-width: 900px){
+main .navs .bars .but{
+  display: block;
+}
+main .navs .bars{
+  width: 30%;
+}
+ main .navs ul{
+  display: none;
+}
+main .navs .log-sec{
+  width: 70%;
+}
+header nav ul{
+  display: none;
+}
+footer .foot-section ul{
+  display: block;
+  display: flex;
+}
+main .navs .tog{
+
+  height: 20rem;
+  width: 100%;
+  background: var(--col1);
+  border-bottom-left-radius: 4px;
+
+}
+
+  }
+
+
+
+@media screen and (max-width: 680px){
+main .navs .bars .but{
+  display: block;
+}
+main .navs .bars{
+  width: 15%;
+}
+ main .navs ul{
+  display: none;
+}
+main .navs .log-sec{
+  width: 85%;
+}
+main .navs .log-sec{
+  display: flex;
+ justify-content: center;
+}
+
+  }
+
+
+
+
+@media screen and (max-width: 640px){
+main .navs .bars .but{
+  display: block;
+}
+main .navs .bars{
+  width: 9rem;
+}
+ main .navs ul{
+  display: none;
+}
+main .navs .log-sec{
+  width: 100%;
+}
+main .navs .log-sec{
+  display: flex;
+ justify-content: center;
+}
+main .card-section .flex .grid-a{
+  width:100%;
+  flex-direction: column;
+  align-items: center;
+}
+main .card-section .flex .grid-b{
+   width:100%;
+   flex-direction: column;
+   align-items: center;
+    margin-top: 0.1rem;
+}
+main .card-section .flex .card{
+  width: 80%;
+   margin-top: 1.35rem;
+}
+
+  }
+
+
+
+  @media screen and (max-width: 620px){
+main .navs .log-sec button{
+  margin-left: 1rem;
+  padding: 0.2rem 1.5rem;
+  border: solid 2px var(--col2);
+}
+main .navs .log-sec button a{
+  font-size: 0.85rem;
+}
+main .navs .bars .but{
+  font-size: 1.65rem;
+}
+
+  }
+
+
+@media screen and (max-width: 600px){
+main .card-section .flex .grid-a{
+  width:100%;
+  flex-direction: column;
+  align-items: center;
+}
+main .card-section .flex .grid-b{
+   width:100%;
+   flex-direction: column;
+   align-items: center;
+    margin-top: 0.1rem;
+}
+main .card-section .flex .card{
+  width: 25rem;
+   margin-top: 1.35rem;
+}
+header nav{
+justify-content: center;
+}
+main .main-carousel .carousel-cell .compress h1{
+  font-size: 1.8rem;
+}
+
+main .main-carousel .carousel-cell .compress p{
+  font-size: 0.8rem;
+}
+
+main .main-carousel .carousel-cell .compress button{
+    padding: 0.12rem 1rem;
+ font-size: 0.85rem;
+}
+main .main-carousel .carousel-cell .compress button a{
+  font-size: 0.9rem;
+}
+
+main .main-carousel{
+ height: 16rem;
+}
+main .navs .tog{
+
+  height: 17.25rem;
+  top: 2.15rem;
+  width: 100%;
+  background: var(--col1);
+  border-bottom-left-radius: 4px;
+
+}
+
+main .navs .tog ul li a{
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  width: 80%;
+    box-shadow: 1px 1px 2px var(--col3);
+
+}
+}
+
+
+@media screen and (max-width: 500px){
+
+main .card-section .flex .card{
+  width: 20rem;
+   margin-top: 1.35rem;
+}
+
+main .main-carousel{
+ height: 15rem;
+}
+main .card-section .head-title{
+
+  font-size: 1.8rem;
+
+}
+main .main-carousel .carousel-cell .compress h1{
+  font-size: 1.3rem;
+}
+
+main .main-carousel .carousel-cell .compress p{
+  font-size: 0.7rem;
+}
+main .navs .log-sec h3{
+ font-size: 0.7rem;
+ width: 6rem;
+
+}
+main .navs .log-sec button{
+  margin-left: 0.8rem;
+  padding: 0.1rem 0.5rem;
+   border: none;
+   outline: none;
+   border-radius: 4px;
+  border: solid 1.75px var(--col2);
+  width: 5rem;
+}
+main .navs .log-sec button a{
+
+  font-size: 0.65rem;
+
+}
+main .navs .log-sec{
+
+  width: 75%;
+}
+main .navs .bars .but{
+
+  font-size: 1.25rem;
+
+
+}
+main .navs .bars{
+  min-width: 5rem;
+}
+main .card-section .flex .grid-a{
+  width:100%;
+  align-items: center;
+  padding: 0;
+}
+main .card-section .flex .grid-b{
+   width:100%;
+    align-items: center;
+    padding: 0;
+}
+main .card-section .flex .card{
+  width: 17rem;
+  margin-left: 0;
+}
+header nav{
+  justify-content: center;
+}
+header nav .logo{
+  margin-left: 0;
+}
+header nav .logo h1{
+  font-size: 1.5rem;
+  position: relative;
+  right: 1.2rem;
+}
+header nav .logo h1 i{
+  font-size: 1.5rem;
+  right: -2rem;
+}
+
+
+footer .foot-section ul{
+  justify-content: center;
+}
+footer .foot-section ul li{
+
+  margin-right: 2.5rem;
+}
+footer .foot-section ul li:first-child{
+  margin-left: 1.25rem;
+}
+footer .foot-section ul li a{
+
+  font-size: 1.5rem;
+}
+
+footer .foot-section .c-r h5{
+font-size: 0.8rem;
+}
+footer .foot-section .c-r h6{
+ margin-top: 0.8rem;
+  font-size: 0.82rem;
+
+}
+
+main .comp form h1{
+font-size: 2rem;
+text-align: center;
+}
+
+}

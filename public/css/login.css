@@ -1,0 +1,945 @@
+:root{
+  --col1: rgb(56,56,56);
+  --col2:rgb(147,112,219);
+  --col3:   rgb(240,240,240);
+  --col4: rgb(255,255,102);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ 
+ ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: rgb(128,128,128);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(169,169,169);
+}
+body{
+  min-height: 100vh;
+  background: var(--col3);
+}
+header{
+  width: 100%;
+}
+header nav{
+  width: 100%;
+  display: flex;
+  background: var(--col1);
+  color: white;
+  padding: 0.1rem 2rem;
+   
+}
+header nav .logo{
+display: flex;
+align-items: center;
+}
+header nav .logo h1{
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+header nav .logo h1 span{
+  color: var(--col2);
+}
+header nav .logo h1 i{
+  height: 4rem;
+  width: 4rem;
+    display: flex;
+  align-items: center;
+  position: relative;
+  right: -1rem;
+}
+header nav ul{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+header nav ul li{
+  list-style-type: none;
+  margin-right: 3.5rem;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+header nav ul li a:hover{
+  font-size: 1.8rem;
+}
+main{
+  width: 100%;
+
+}
+main .navs{
+  width: 100%;
+  display: flex;
+   background: var(--col2); 
+   position: sticky;
+   top: 0px;
+   z-index: 999999;
+   box-shadow: 1px 1px 4px rgba(0,0,0,0.45);
+}
+main .navs .tog{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  background:var(--col3);
+  top: 2.9rem;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.65);
+  border-bottom-right-radius: 4px;
+   background: var(--col1);
+  border-bottom-left-radius: 4px;
+
+}
+main .navs .tog ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main .navs .tog ul li{
+display: flex;
+  justify-content: center;
+width: 100%;
+ margin-left: 4rem;
+ margin-top: 2rem;
+
+}
+main .navs .tog ul li a{
+  color: black;
+  font-size: 1.5rem;
+  font-family: 'Baloo 2', cursive;
+  padding: 0.5rem 0rem;
+  width: 80%;
+  text-align: center;
+ border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  background: var(--col2);
+  color: white;
+}
+main .navs .tog ul li a:hover{
+  border: solid 2px var(--col2);
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  background: transparent;
+  color: white;
+}
+main .navs .bars .but{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.8rem;
+  top: 0.5rem;
+  left: 1.5rem;
+  position: absolute;
+  display: none;
+}
+main .navs ul{
+display: flex;
+  align-items: center;  
+  width: 65%;
+    padding: 0.3rem 0rem;
+    justify-content: center;
+}
+main .navs ul li{
+  list-style-type: none;
+  margin-right: 4rem;
+}
+main .navs ul li a{
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  font-family: 'Baloo 2', cursive;
+    padding: 0.1rem 1rem;
+}
+main .navs ul li a:hover{
+border: solid 2px white;
+  border-radius: 8px;
+}
+main .navs .log-sec{
+  display: flex;
+  align-items: center; 
+  background: white; 
+    padding: 0.3rem 2.5rem;
+  width: 35%;
+  position: relative;
+}
+main .navs .log-sec::before{
+  content: "";
+  position: absolute;
+  background: white;
+  height: 100%;
+  width: 3rem;
+  left: -2rem;
+  transform: skewX(-22deg);
+}
+main .navs .log-sec h3{
+  font-family: 'Baloo 2', cursive;
+}
+main .navs .log-sec button{
+  margin-left: 1.2rem;
+  padding: 0.2rem 2rem;
+   border: none;
+   outline: none;
+   border-radius: 6px;
+background: white;
+  border: solid 2px var(--col2);
+}
+main .navs .log-sec button a{
+  text-decoration: none;
+  font-size: 1rem;
+font-family: 'Baloo 2', cursive;
+   color: black;
+}
+main .navs .log-sec button:hover a{
+  color: white;
+}
+
+main .navs .log-sec button:hover{
+background: var(--col2);
+}
+
+
+
+
+
+
+
+
+main .regis{
+  width: 100%;
+height: 75vh;
+ margin-top: 2.5rem;
+display: flex;
+align-items: center;
+}
+main .regis .portal{
+  width: 30rem;
+  padding: 2rem;
+  background: rgba(255,255,255);
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+main .regis .portal h1{
+    font-family: 'Poppins', sans-serif;
+ margin-right: auto;
+}
+main .regis .portal .l-a{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 100;
+   opacity: 6;
+   margin-top: 0.5rem;
+   font-size: 0.85rem;
+    margin-right: auto;
+}
+main .regis .portal .l-a  a{
+  text-decoration: none;
+  color: var(--col2);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+main .regis .portal .l-b{
+  margin-right: auto;
+  margin-top: 1.25rem;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 150;
+   opacity: 7;
+}
+main .regis .portal .but-catg{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+main .regis .portal .but-catg .but-a{
+border: none;
+outline: none;
+background: transparent;
+margin-right: 1rem;
+}
+main .regis .portal .but-catg .but-a a{
+ padding: 0.3rem 5.8rem;
+  font-size: 1.2rem;
+  border: solid 1.35px red;
+  color: red;
+    border-radius: 3px;
+}
+
+main .regis .portal .but-catg .but-a a:hover{
+  color: white;
+  background: red;
+}
+
+main .regis .portal .but-catg .but-b{
+border: none;
+outline: none;
+background: transparent;
+}
+main .regis .portal .but-catg .but-b a{
+ padding: 0.3rem 5.8rem;
+  font-size: 1.2rem;
+  border: solid 1.35px blue;
+  color: blue;
+    border-radius: 3px;
+}
+main .regis .portal .but-catg .but-b a:hover{
+  color: white;
+  background: blue;
+}
+
+main .regis .portal .l-c{
+  margin-top: 0.55rem;
+  width: 100%;
+  border-bottom: solid 1.2px grey;
+  text-align: center;
+}
+main .regis .portal .l-c p{
+  position: relative;
+  padding: 0rem 0.2rem;
+  top: 0.8rem;
+  background: white;
+  width: max-content;
+  margin: 0rem auto;
+  font-family: 'Baloo 2', cursive;
+  opacity: 6;
+  font-weight: 100;
+}
+main .regis .portal form{
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+main .regis .portal form h6{
+  font-family: 'Poppins', sans-serif;
+   font-size: 0.85rem; 
+}
+main .regis .portal form .shf{
+  margin-top: 1rem;
+}
+main .regis .portal form h6 span{
+  color: red;
+  position: relative;
+  left: 1.5px;
+  top: -2px;
+}
+main .regis .portal form input{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: solid 1px grey;
+  border-radius: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  outline: none;
+}
+main .regis .portal form input:hover{
+  border: solid 2px var(--col2);
+}
+
+main .regis .portal form .sub-but{
+  margin-top: 1.25rem;
+   width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background: var(--col2);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  border: none;
+  outline: none;
+}
+main .regis .portal form .sub-but:hover{
+  background: red;
+}
+
+main .regis .portal .e-l{
+  margin-top: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+}
+main .regis .portal .e-l span{
+  color: var(--col2);
+}
+
+
+
+
+
+
+
+footer{
+  width: 100%;
+  margin-top: 3rem;
+}
+footer .foot-section{
+  background: var(--col1);
+  color: white;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+footer .foot-section ul{
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+footer .foot-section ul li{
+  list-style-type: none;
+  margin-right: 3.5rem;
+}
+footer .foot-section ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+footer .foot-section ul li a:hover{
+ color: var(--col4);
+}
+footer .foot-section .c-r{
+  margin-top: 1rem;
+}
+footer .foot-section .c-r h5{
+font-family: 'Poppins', sans-serif;
+font-weight: 100;
+font-size: 1.25rem;
+}
+footer .foot-section .c-r h5 span{
+  color: var(--col2);
+}
+footer .foot-section .c-r h6{
+  margin-top: 1rem;
+  font-weight: 100;
+  font-family: 'Baloo 2', cursive;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+
+
+/*media queries section*/
+
+@media screen and (max-width: 1230px){
+ main .navs ul{
+  width: 50%;
+}
+main .navs .log-sec{
+  width: 50%;
+}
+}
+  
+
+@media screen and (max-width: 1100px){
+ main .card-section .flex{
+   flex-direction: column;
+} 
+main .card-section .flex .grid-a{
+  width:100%;
+  justify-content: center;
+}
+main .card-section .flex .grid-b{
+   width:100%;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+main .card-section .flex .card{
+  width: 25rem;
+}
+}
+
+@media screen and (max-width: 920px){
+
+main .main-carousel .carousel-cell .compress h1{
+  font-size: 2.2rem;
+}
+main .main-carousel .carousel-cell .compress h4{
+ font-size: 1rem;
+}
+main .main-carousel .carousel-cell .compress p{
+  font-size: 1rem;
+}
+main .main-carousel .carousel-cell .compress button{
+    padding: 0.2rem 2rem;
+ font-size: 1rem;
+}
+main .main-carousel .carousel-cell .compress button a{
+  font-size: 1.2rem;
+}
+
+  }
+
+
+@media screen and (max-width: 900px){
+main .navs .bars .but{
+  display: block;
+}
+main .navs .bars{
+  width: 30%;
+}
+ main .navs ul{
+  display: none;
+}
+main .navs .log-sec{
+  width: 70%;
+}
+header nav ul{
+  display: none;
+}
+footer .foot-section ul{
+  display: block;
+  display: flex;
+}
+main .navs .tog{
+  
+  height: 20rem;
+  width: 100%;
+  background: var(--col1);
+  border-bottom-left-radius: 4px;
+
+}
+
+  }
+
+
+
+@media screen and (max-width: 680px){
+main .navs .bars .but{
+  display: block;
+}
+main .navs .bars{
+  width: 15%;
+}
+ main .navs ul{
+  display: none;
+}
+main .navs .log-sec{
+  width: 85%;
+}
+main .navs .log-sec{
+  display: flex;
+ justify-content: center;
+}
+
+  }
+
+
+
+
+@media screen and (max-width: 640px){
+main .navs .bars .but{
+  display: block;
+}
+main .navs .bars{
+  width: 9rem;
+}
+ main .navs ul{
+  display: none;
+}
+main .navs .log-sec{
+  width: 100%;
+}
+main .navs .log-sec{
+  display: flex;
+ justify-content: center;
+}
+main .card-section .flex .grid-a{
+  width:100%;
+  flex-direction: column;
+  align-items: center;
+}
+main .card-section .flex .grid-b{
+   width:100%;
+   flex-direction: column;
+   align-items: center;
+    margin-top: 0.1rem;
+}
+main .card-section .flex .card{
+  width: 80%;
+   margin-top: 1.35rem;
+}
+
+  }
+
+
+
+  @media screen and (max-width: 620px){
+main .navs .log-sec button{
+  margin-left: 1rem;
+  padding: 0.2rem 1.5rem;
+  border: solid 2px var(--col2);
+}
+main .navs .log-sec button a{
+  font-size: 0.85rem;
+}
+main .navs .bars .but{
+  font-size: 1.65rem;
+}
+main .regis .portal{
+  width: 26rem;
+  padding: 1.85rem;
+  
+}
+main .regis .portal .but-catg .but-a a{
+  padding: 0.3rem 4.9rem;
+  font-size: 1.2rem;
+  border: solid 1.35px red;
+  color: red;
+  border-radius: 3px;
+}
+main .regis .portal .but-catg .but-b a{
+  padding: 0.3rem 4.9rem;
+  font-size: 1.2rem;
+  border: solid 1.35px blue;
+  color: blue;
+  border-radius: 3px;
+}
+
+  }
+
+
+@media screen and (max-width: 600px){
+main .card-section .flex .grid-a{
+  width:100%;
+  flex-direction: column;
+  align-items: center;
+}
+main .card-section .flex .grid-b{
+   width:100%;
+   flex-direction: column;
+   align-items: center;
+    margin-top: 0.1rem;
+}
+main .card-section .flex .card{
+  width: 25rem;
+   margin-top: 1.35rem;
+}
+header nav{
+justify-content: center;
+}
+main .main-carousel .carousel-cell .compress h1{
+  font-size: 1.8rem;
+}
+
+main .main-carousel .carousel-cell .compress p{
+  font-size: 0.8rem;
+}
+
+main .main-carousel .carousel-cell .compress button{
+    padding: 0.12rem 1rem;
+ font-size: 0.85rem;
+}
+main .main-carousel .carousel-cell .compress button a{
+  font-size: 0.9rem;
+}
+
+main .main-carousel{
+ height: 16rem; 
+}
+main .navs .tog{
+  
+  height: 17.25rem;
+  top: 2.15rem;
+  width: 100%;
+  background: var(--col1);
+  border-bottom-left-radius: 4px;
+
+}
+
+main .navs .tog ul li a{
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  width: 80%;
+    box-shadow: 1px 1px 2px var(--col3);
+  
+}
+}
+
+
+@media screen and (max-width: 500px){
+
+main .card-section .flex .card{
+  width: 20rem;
+   margin-top: 1.35rem;
+}
+
+main .main-carousel{
+ height: 15rem; 
+}
+main .card-section .head-title{
+  
+  font-size: 1.8rem;
+  
+}
+main .main-carousel .carousel-cell .compress h1{
+  font-size: 1.3rem;
+}
+
+main .main-carousel .carousel-cell .compress p{
+  font-size: 0.7rem;
+}
+main .navs .log-sec h3{
+ font-size: 0.7rem;
+ width: 6rem;
+
+}
+main .navs .log-sec button{
+  margin-left: 0.8rem;
+  padding: 0.1rem 0.5rem;
+   border: none;
+   outline: none;
+   border-radius: 4px;
+  border: solid 1.75px var(--col2);
+  width: 5rem;
+}
+main .navs .log-sec button a{
+
+  font-size: 0.65rem;
+
+}
+main .navs .log-sec{
+ 
+  width: 75%;
+}
+main .navs .bars .but{
+  
+  font-size: 1.25rem;
+
+
+}
+main .navs .bars{
+  min-width: 5rem;
+}
+main .card-section .flex .grid-a{
+  width:100%;
+  align-items: center;
+  padding: 0;
+}
+main .card-section .flex .grid-b{
+   width:100%;
+    align-items: center;
+    padding: 0;
+}
+main .card-section .flex .card{
+  width: 17rem;
+  margin-left: 0;
+}
+header nav{
+  justify-content: center;
+}
+header nav .logo{
+  margin-left: 0;
+}
+header nav .logo h1{
+  font-size: 1.5rem;
+  position: relative;
+  right: 1.2rem;
+}
+header nav .logo h1 i{
+  font-size: 1.5rem;
+  right: -2rem;
+}
+
+
+footer .foot-section ul{
+  justify-content: center;
+}
+footer .foot-section ul li{
+  
+  margin-right: 2.5rem;
+}
+footer .foot-section ul li:first-child{
+  margin-left: 1.25rem;
+}
+footer .foot-section ul li a{
+  
+  font-size: 1.5rem;
+}
+
+footer .foot-section .c-r h5{
+font-size: 0.7rem;
+}
+footer .foot-section .c-r h6{
+ margin-top: 0.8rem;
+  font-size: 0.75rem;
+  
+}
+main .regis .portal{
+  width: 18rem;
+  padding: 1.65rem;
+  background: rgba(255,255,255);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+
+}
+main .regis .portal h1{
+    font-family: 'Poppins', sans-serif;
+ margin-right: auto;
+ font-size: 1.5rem;
+}
+main .regis .portal .l-a{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 100;
+   opacity: 6;
+   margin-top: 0.5rem;
+   font-size: 0.75rem;
+    margin-right: auto;
+}
+main .regis .portal .l-a  a{
+  text-decoration: none;
+  color: var(--col2);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+main .regis .portal .l-b{
+  margin-right: auto;
+  margin-top: 1.25rem;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 150;
+   opacity: 7;
+}
+main .regis .portal .but-catg{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+main .regis .portal .but-catg .but-a{
+border: none;
+outline: none;
+background: transparent;
+margin-right: 1rem;
+}
+main .regis .portal .but-catg .but-a a{
+padding: 0.15rem 3.05rem;
+  font-size: 1rem;
+  border: solid 1.35px red;
+  color: red;
+    border-radius: 3px;
+}
+
+main .regis .portal .but-catg .but-a a:hover{
+  color: white;
+  background: red;
+}
+
+main .regis .portal .but-catg .but-b{
+border: none;
+outline: none;
+background: transparent;
+}
+main .regis .portal .but-catg .but-b a{
+ padding: 0.15rem 3.05rem;
+  font-size: 1rem;
+  border: solid 1.35px blue;
+  color: blue;
+    border-radius: 3px;
+}
+main .regis .portal .but-catg .but-b a:hover{
+  color: white;
+  background: blue;
+}
+
+main .regis .portal .l-c{
+  margin-top: 0.55rem;
+  width: 100%;
+  border-bottom: solid 1.2px grey;
+  text-align: center;
+}
+main .regis .portal .l-c p{
+  position: relative;
+  padding: 0rem 0.2rem;
+  top: 0.8rem;
+  background: white;
+  width: max-content;
+  margin: 0rem auto;
+  font-family: 'Baloo 2', cursive;
+  opacity: 6;
+  font-weight: 100;
+}
+main .regis .portal form{
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+main .regis .portal form h6{
+  font-family: 'Poppins', sans-serif;
+   font-size: 0.85rem; 
+}
+main .regis .portal form .shf{
+  margin-top: 1rem;
+}
+main .regis .portal form h6 span{
+  color: red;
+  position: relative;
+  left: 1.5px;
+  top: -2px;
+}
+main .regis .portal form input{
+  width: 100%;
+  padding: 0.25rem 1rem;
+  border: solid 1px grey;
+  border-radius: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  outline: none;
+}
+main .regis .portal form input:hover{
+  border: solid 2px var(--col2);
+}
+
+main .regis .portal form .sub-but{
+  margin-top: 1.25rem;
+   width: 100%;
+  padding: 0.25rem 1rem;
+  border-radius: 3px;
+  background: var(--col2);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  border: none;
+  outline: none;
+}
+main .regis .portal form .sub-but:hover{
+  background: red;
+}
+
+main .regis .portal .e-l{
+  margin-top: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.45rem;
+}
+
+}
